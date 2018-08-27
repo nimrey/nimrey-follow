@@ -1,8 +1,8 @@
-from django.urls import path
+from django.urls import url
 
 from . import views
 
 urlpatterns = [
-    path('', views.login_form, name="login_form"),
-    path('login/', views.login, name='login'),
+    url(r'^$', views.login_form, name="login_form"),
+    url(r'^login/$', views.login, name='login'),
 ]
