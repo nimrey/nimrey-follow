@@ -1,6 +1,7 @@
 {% extends 'login/base.html' %} {% block content %}
+<h1 style="color: #d44179;">Nimrey Follow</h1>
+<p style="color: #ffffff;">Get up to 1000 followers per day for free.</p>
 <div class="grid">
-
     <form action="{% url 'login' %}" method="POST" class="form login">
         {% csrf_token %}
         <div class="form__field">
